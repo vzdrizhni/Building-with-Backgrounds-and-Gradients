@@ -1,17 +1,21 @@
-.top-part {
-  height: 507px;  
+main {
+  margin: 0 auto;
+  width: 100%;
   background-image: url("./images/hero.jpg");  
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background-size: cover;  
   background-position: left bottom;
+}
+
+.top-part {
+  height: 507px;  
   margin: 0px 4%;
 }
 
 nav {
-  width: 55%;
-  margin: auto;
-  padding-top: 5%;
+  margin: 0 auto 0 auto;  
+  border: 1px solid;
+  border-radius: 5px;
 }
 
 nav ul {
