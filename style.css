@@ -1,19 +1,47 @@
 .top-part {
-  height: 461px;  
+  height: 507px;  
   background-image: url("./images/hero.jpg");  
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   background-position: left bottom;
+  margin: 0px 4%;
+}
+
+nav {
+  width: 55%;
+  margin: auto;
+  padding-top: 5%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  list-style-type: none;
 }
 
 .what-will-container {   
     width: 80%;
     height: 30%;
-    padding: 17% 18%;
+    padding: 2% 18% 0;
     box-sizing: content-box;
 }
 
 .what-will-container img {
     width: 80%;    
+}
+
+.what-will-container img:nth-child(1) {
+  object-fit: cover;
+  object-position: 0 0;
+  height: 88px;
+}
+
+.what-will-container img:nth-child(3) {
+  height: 30px;
+  object-fit: cover;
+  object-position: 0 0;
 }
