@@ -1,0 +1,19 @@
+.top-part {
+  height: 461px;  
+  background-image: url("./images/hero.jpg");  
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: left bottom;
+}
+
+.what-will-container {   
+    width: 80%;
+    height: 30%;
+    padding: 17% 18%;
+    box-sizing: content-box;
+}
+
+.what-will-container img {
+    width: 80%;    
+}
