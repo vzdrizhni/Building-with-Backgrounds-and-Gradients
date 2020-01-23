@@ -1,26 +1,29 @@
-main {
-  margin: 0 auto;
+main {  
+  
+}
+
+.top-part { 
+  height: 64%; 
   width: 100%;
   background-image: url("./images/hero.jpg");  
   background-repeat: no-repeat;
   background-size: cover;  
   background-position: left bottom;
-}
-
-.top-part {
-  height: 507px;  
-  margin: 0px 4%;
+  position: absolute;
 }
 
 nav {
-  margin: 0 auto 0 auto;  
+  margin: 37px 17% 0px;
   border: 1px solid;
-  border-radius: 5px;
+  border-radius: 5px;  
+  position: absolute;
+  width: 70%;
 }
 
 nav ul {
   display: flex;
   justify-content: space-between;
+  margin: 8px;
 }
 
 ul li {
@@ -28,10 +31,9 @@ ul li {
 }
 
 .what-will-container {   
-    width: 80%;
-    height: 30%;
-    padding: 2% 18% 0;
-    box-sizing: content-box;
+  width: 91%;
+  height: 42%;
+  margin: 14% 17% 0;
 }
 
 .what-will-container img {
