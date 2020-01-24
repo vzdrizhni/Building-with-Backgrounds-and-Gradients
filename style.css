@@ -64,26 +64,43 @@ span {
   margin-left: 10px;
 }
 
-.what-will-container {   
-  margin-top: 205px;
-  margin-left: 250px;
-  width: 1037px;
+.what-will-container { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 143px;
+  margin-left: 79px;
+  height: 55%;
 }
 
 .what-will-container img {
-    width: 80%;    
+  width: 80%; 
+  display: flex;
+  flex-direction: column;
+}   
+
+
+.will-1 {
+  background-color: azure;
+	background: url(./images/your_verse_title_small_2x.png) no-repeat 49.931% 54.321%;
+	width: 1231px;
+  height: 121px;
+  background-size: cover;
 }
 
-.what-will-container img:nth-child(1) {
-  object-fit: cover;
-  object-position: 0 0;
-  height: 82px;
+.will-2 {  
+	background: url(./images/your_verse_subhead_small_2x.png) no-repeat 49.878% 63.158%;
+	width: 1248px;
+  height: 107px;
+  background-size: contain;
+  margin-top: -45px;
 }
 
-.what-will-container img:nth-child(3) {  
-    background: url('imgs/cta_your_verse_27pt_2x.png') no-repeat -438px -5px;
-    width: 1080px;
-    height: 55px; 
+.will-3 { 
+	background: url(./images/cta_your_verse_27pt_2x.png) no-repeat 49.773% 6.849%;
+	width: 1080px;
+	height: 55px;
 }
 
 .bottom-part {
