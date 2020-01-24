@@ -80,11 +80,10 @@ span {
   height: 82px;
 }
 
-.what-will-container img:nth-child(3) {
-  height: 30px;
-  object-fit: cover;
-  object-position: 0 0;
-  margin-top: 20px;
+.what-will-container img:nth-child(3) {  
+    background: url('imgs/cta_your_verse_27pt_2x.png') no-repeat -438px -5px;
+    width: 1080px;
+    height: 55px; 
 }
 
 .bottom-part {
@@ -109,16 +108,24 @@ span {
 
 .bot-iphone-1 { 
   background: url(./images/iphone5S.jpg); 
+  background-repeat: no-repeat;
+  background-size: 100% 76%;
 }
 
 .bot-iphone-2 {
   background: url(images/iphone5C2.jpg); 
+  background-repeat: no-repeat;
+  background-size: 100% 76%;
 }
 
 .bot-iphone-3  {
   background: url(./images/happybirthday.jpg);  
+  background-repeat: no-repeat;
+  background-size: 100% 76%;
 }
 
 .bot-iphone-4 {
   background: url(./images/supplier.jpg); 
+  background-repeat: no-repeat;
+  background-size: 100% 76%;
 }
