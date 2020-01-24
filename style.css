@@ -1,15 +1,15 @@
-main {  
-  
-}
 
 .top-part { 
-  height: 64%; 
-  width: 100%;
-  background-image: url("./images/hero.jpg");  
+  height: 64%;
+  width: 99.5%;
+  background-image: url(./images/hero.jpg);
   background-repeat: no-repeat;
-  background-size: cover;  
+  background-size: cover;
   background-position: left bottom;
   position: absolute;
+  background-size: 100% auto;
+  overflow: hidden;
+  z-index: 89;
 }
 
 nav {
@@ -18,22 +18,56 @@ nav {
   border-radius: 5px;  
   position: absolute;
   width: 70%;
+  z-index: 99;
+  height: 40px;
+  background: linear-gradient( to bottom, rgb(119, 124, 120) 5%, rgb(105, 105, 105) 11%, rgb(100, 100, 100) 50%, rgb(82, 82, 82) 51%, rgb(100, 105, 101) 100% );
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 8px;
+  display: flex; 
+  flex-flow: row wrap;
+  justify-content: space-evenly; 
+  margin: 0 0 0 0;
+  color: white;
+  align-items: center;
+  padding-left: 0px;
 }
 
 ul li {
-  list-style-type: none;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  list-style: none;  
+  border-left: 1px solid rgb(68, 68, 68);
+  flex: 1;
+  text-align: center;
+  height: 40px;
+}
+
+ul:first-child {
+  border-left: none;
+}
+
+ul li:hover {
+  opacity: 0.5;
+}
+
+input {
+  border-radius: 10px;
+  width: 83px;
+  margin-right: 10px;
+  background-color: transparent;
+}
+
+span {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .what-will-container {   
-  width: 91%;
-  height: 42%;
-  margin: 14% 17% 0;
+  margin-top: 205px;
+  margin-left: 250px;
+  width: 1037px;
 }
 
 .what-will-container img {
@@ -43,11 +77,48 @@ ul li {
 .what-will-container img:nth-child(1) {
   object-fit: cover;
   object-position: 0 0;
-  height: 88px;
+  height: 82px;
 }
 
 .what-will-container img:nth-child(3) {
   height: 30px;
   object-fit: cover;
   object-position: 0 0;
+  margin-top: 20px;
+}
+
+.bottom-part {
+  position: absolute;
+  bottom: 0;
+  height: 266px;
+  width: 99.5%;
+}
+
+.bottom-part ul {
+  display: flex;
+  justify-content: start;
+  padding-left: 0px;
+  height: 100%;
+  margin-top: -10px;
+}
+
+.bottom-part ul li {  
+  height: 100%;
+  border-left: none; 
+}
+
+.bot-iphone-1 { 
+  background: url(./images/iphone5S.jpg); 
+}
+
+.bot-iphone-2 {
+  background: url(images/iphone5C2.jpg); 
+}
+
+.bot-iphone-3  {
+  background: url(./images/happybirthday.jpg);  
+}
+
+.bot-iphone-4 {
+  background: url(./images/supplier.jpg); 
 }
