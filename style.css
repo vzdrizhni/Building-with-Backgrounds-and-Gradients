@@ -20,7 +20,7 @@ nav {
   width: 70%;
   z-index: 99;
   height: 40px;
-  background: linear-gradient( to bottom, rgb(119, 124, 120) 5%, rgb(105, 105, 105) 11%, rgb(100, 100, 100) 50%, rgb(82, 82, 82) 51%, rgb(100, 105, 101) 100% );
+  
 }
 
 nav ul {
@@ -48,6 +48,7 @@ ul li {
   flex: 1;
   text-align: center;
   height: 40px;
+  background: linear-gradient( to bottom, rgb(119, 124, 120) 5%, rgb(105, 105, 105) 11%, rgb(100, 100, 100) 50%, rgb(82, 82, 82) 51%, rgb(100, 105, 101) 100% );
 }
 
 ul:first-child {
@@ -55,7 +56,7 @@ ul:first-child {
 }
 
 ul li:hover {
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 input {
