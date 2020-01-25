@@ -31,6 +31,12 @@ nav ul {
   color: white;
   align-items: center;
   padding-left: 0px;
+  font-family: myFirstFont;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./Fonts/Lucida\ Sans\ Unicode.ttf);
 }
 
 ul li {
@@ -71,7 +77,7 @@ span {
   align-items: center;
   margin-top: 143px;
   margin-left: 79px;
-  height: 55%;
+  height: 63%;
 }
 
 .what-will-container img {
@@ -92,7 +98,7 @@ span {
 .will-2 {  
 	background: url(./images/your_verse_subhead_small_2x.png) no-repeat 49.878% 63.158%;
 	width: 1248px;
-  height: 107px;
+  height: 160px;
   background-size: contain;
   margin-top: -45px;
 }
@@ -100,7 +106,8 @@ span {
 .will-3 { 
 	background: url(./images/cta_your_verse_27pt_2x.png) no-repeat 49.773% 6.849%;
 	width: 1080px;
-	height: 55px;
+  height: 35px;
+  background-size: cover;
 }
 
 .bottom-part {
