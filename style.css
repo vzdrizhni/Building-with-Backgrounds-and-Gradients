@@ -22,7 +22,7 @@ nav {
   position: absolute;
   width: 90%;
   z-index: 99;
-  height: 30px;  
+  height: 40px;  
 }
 
 nav ul {
@@ -49,7 +49,7 @@ ul li {
   border-left: 1px solid rgb(68, 68, 68);
   flex: 1;
   text-align: center;
-  height: 30px;
+  height: 40px;
   background: linear-gradient( to bottom, rgb(119, 124, 120) 5%, rgb(105, 105, 105) 11%, rgb(100, 100, 100) 50%, rgb(82, 82, 82) 51%, rgb(100, 105, 101) 100% );
 }
 
@@ -83,14 +83,14 @@ span {
 }
 
 .what-will-container { 
-  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 143px;
-  margin-left: 200px;
-  height: 63%;  
-  width: 73%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 63%;
+  width: 50%;
 }
 
 .what-will-container img {
@@ -155,28 +155,28 @@ span {
   background: url(./images/iphone5S.jpg); 
   background-repeat: no-repeat;
   background-size: 100% 76%;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bot-iphone-2 {
   background: url(images/iphone5C2.jpg); 
   background-repeat: no-repeat;
   background-size: 100% 76%;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bot-iphone-3  {
   background: url(./images/happybirthday.jpg);  
   background-repeat: no-repeat;
   background-size: 100% 76%;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bot-iphone-4 {
   background: url(./images/supplier.jpg); 
   background-repeat: no-repeat;
   background-size: 100% 76%;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bottom-part ul li a {
@@ -186,39 +186,75 @@ span {
 }
 
 footer {
-  position: absolute;
-  top: 737px;
-  display: flex;    
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
+  top: 97%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
   font-family: myFirstFont;
   font-size: 10px;
 }
 
+footer a {
+  color:#0088CC;
+}
+
+.left-footer {
+  position: relative;  
+  margin-top: 7px;
+}
+
+.left-footer a {
+  text-decoration: none;
+}
+
+
 .right-footer {
-  width: 27%;
+  position: relative;
+  display: flex;  
 }
 
 .right-footer ul {
   display: flex;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
-  width: 145%;
-  width: 183%;
+  flex-basis: content;    
+  white-space: nowrap;
 }
 
 .right-footer ul li {
-  background: none;
-  border-left: none;
-  border-right: 1px solid black;
-  height: auto;
+ background: none;
+ border-left: none;
+ border-right: 1px solid black;
+ height: 10px; 
+ border-color: #0088CC;
+}
+
+footer ul li a {
+  text-decoration: none;
+}
+
+.bottom-left-footer {
+  white-space: nowrap;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  flex: 1;
-  text-align: center;
-  height: fit-content;
+}
+
+.bottom-left-footer ul {
+  border-left: none;
+  display: flex;
+  white-space: nowrap;
+}
+
+.bottom-left-footer ul li {
+ background: none;
+ border-left: none;
+ border-right: 1px solid black;
+ height: 10px; 
+ border-color: #0088CC; 
+}
+
+.bottom-left-footer ul li:first-child {
+ border-right: none;
+}
+
+.right-footer ul li:last-child {
+  border-right: none;
 }
