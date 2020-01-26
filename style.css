@@ -1,26 +1,28 @@
-
+main {
+  display: flex;
+  justify-content: center;
+}
 .top-part { 
   height: 64%;
-  width: 99.5%;
+  width: 100%;
   background-image: url(./images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
   position: absolute;
-  background-size: 100% auto;
+  background-size: 100% 250%;
   overflow: hidden;
-  z-index: 89;
+  z-index: 0;
 }
 
 nav {
-  margin: 37px 17% 0px;
+  margin: 37px 1% 0px;
   border: 1px solid;
-  border-radius: 5px;  
+  border-radius: 5px;
   position: absolute;
-  width: 70%;
+  width: 90%;
   z-index: 99;
-  height: 40px;
-  
+  height: 30px;  
 }
 
 nav ul {
@@ -47,7 +49,7 @@ ul li {
   border-left: 1px solid rgb(68, 68, 68);
   flex: 1;
   text-align: center;
-  height: 40px;
+  height: 30px;
   background: linear-gradient( to bottom, rgb(119, 124, 120) 5%, rgb(105, 105, 105) 11%, rgb(100, 100, 100) 50%, rgb(82, 82, 82) 51%, rgb(100, 105, 101) 100% );
 }
 
@@ -57,6 +59,12 @@ ul:first-child {
 
 ul li:hover {
   opacity: 0.9;
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 input {
@@ -69,6 +77,9 @@ input {
 span {
   margin-right: 10px;
   margin-left: 10px;
+  position: absolute;
+  left: 81.6em;
+  top: 12%;
 }
 
 .what-will-container { 
@@ -77,14 +88,15 @@ span {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 143px;
-  margin-left: 79px;
-  height: 63%;
+  margin-left: 200px;
+  height: 63%;  
+  width: 73%;
 }
 
 .what-will-container img {
   width: 80%; 
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
 }   
 
 
@@ -94,6 +106,7 @@ span {
 	width: 1231px;
   height: 121px;
   background-size: cover;
+  cursor: pointer;
 }
 
 .will-2 {  
@@ -102,6 +115,7 @@ span {
   height: 160px;
   background-size: contain;
   margin-top: -45px;
+  cursor: pointer;
 }
 
 .will-3 { 
@@ -109,13 +123,14 @@ span {
 	width: 1080px;
   height: 35px;
   background-size: cover;
+  cursor: pointer;
 }
 
 .bottom-part {
   position: absolute;
-  bottom: 0;
-  height: 266px;
-  width: 99.5%;
+  height: 262px;
+  width: 100%;
+  top: 492px;
 }
 
 .bottom-part ul {
@@ -123,7 +138,8 @@ span {
   justify-content: start;
   padding-left: 0px;
   height: 100%;
-  margin-top: -10px;
+  margin-bottom: 0px;
+  margin-top: 0px;  
 }
 
 .bottom-part ul li {  
@@ -131,26 +147,78 @@ span {
   border-left: none; 
 }
 
+.bottom-part ul li {
+  opacity: 1;
+}
+
 .bot-iphone-1 { 
   background: url(./images/iphone5S.jpg); 
   background-repeat: no-repeat;
   background-size: 100% 76%;
+  background-size: contain;
 }
 
 .bot-iphone-2 {
   background: url(images/iphone5C2.jpg); 
   background-repeat: no-repeat;
   background-size: 100% 76%;
+  background-size: contain;
 }
 
 .bot-iphone-3  {
   background: url(./images/happybirthday.jpg);  
   background-repeat: no-repeat;
   background-size: 100% 76%;
+  background-size: contain;
 }
 
 .bot-iphone-4 {
   background: url(./images/supplier.jpg); 
   background-repeat: no-repeat;
   background-size: 100% 76%;
+  background-size: contain;
+}
+
+.bottom-part ul li a {
+  width: 100%;
+  height: 84%;
+  margin-top: -40px;
+}
+
+footer {
+  position: absolute;
+  top: 737px;
+  display: flex;    
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  font-family: myFirstFont;
+  font-size: 10px;
+}
+
+.right-footer {
+  width: 27%;
+}
+
+.right-footer ul {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  width: 145%;
+  width: 183%;
+}
+
+.right-footer ul li {
+  background: none;
+  border-left: none;
+  border-right: 1px solid black;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex: 1;
+  text-align: center;
+  height: fit-content;
 }
