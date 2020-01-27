@@ -92,7 +92,8 @@ main {
   display: flex;
   justify-content: center;
 }
-.top-part { 
+
+.top-part {
   height: 64%;
   width: 100%;
   background-image: url(./images/hero.jpg);
@@ -111,14 +112,14 @@ nav {
   position: absolute;
   width: 90%;
   z-index: 99;
-  height: 40px; 
-  top: 8%;   
+  height: 40px;
+  top: 8%;
 }
 
 nav .nav-bar {
-  display: flex; 
+  display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   margin: 0 0 0 0;
   color: white;
   align-items: center;
@@ -133,10 +134,10 @@ nav .nav-bar {
 }
 
 .nav-bar li {
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;  
+  list-style: none;
   border-left: 1px solid rgb(68, 68, 68);
   flex: 1;
   text-align: center;
@@ -183,28 +184,27 @@ span {
   font-size: 1.2rem;
 }
 
-.what-will-container { 
+.what-will-container {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 143px;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
 }
 
 .what-will-container img {
   display: flex;
-  flex-direction: column;  
-}   
+  flex-direction: column;
+}
 
-
-.will-1 { 
+.will-1 {
   object-fit: cover;
-  object-position: 0 5px; 
+  object-position: 0 5px;
   cursor: pointer;
 }
 
-.will-2 {  
+.will-2 {
 	background: url(./images/your_verse_subhead_small_2x.png) no-repeat 50% 50%;
   height: 88px;
   background-size: contain;
@@ -212,7 +212,7 @@ span {
   cursor: pointer;
 }
 
-.will-3 { 
+.will-3 {
   height: 66px;
   cursor: pointer;
   margin: 0 auto;
@@ -220,7 +220,7 @@ span {
 }
 
 .bottom-part {
-  position: absolute;  
+  position: absolute;
   width: 100%;
   top: auto;
   bottom: 85px;
@@ -232,37 +232,37 @@ span {
   padding-left: 0px;
   height: 100%;
   margin-bottom: 0px;
-  margin-top: 0px;  
+  margin-top: 0px;
 }
 
-.bottom-part ul li {  
+.bottom-part ul li {
   height: 100%;
-  border-left: none; 
+  border-left: none;
   height: 197px;
   width: 25%;
   list-style: none;
 }
 
-.bot-iphone-1 { 
-  background: url(./images/iphone5S.jpg); 
+.bot-iphone-1 {
+  background: url(./images/iphone5S.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .bot-iphone-2 {
-  background: url(images/iphone5C2.jpg); 
+  background: url(images/iphone5C2.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-.bot-iphone-3  {
-  background: url(./images/happybirthday.jpg);  
+.bot-iphone-3 {
+  background: url(./images/happybirthday.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .bot-iphone-4 {
-  background: url(./images/supplier.jpg); 
+  background: url(./images/supplier.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -271,7 +271,7 @@ span {
   width: 100%;
   height: 100%;
   display: block;
-}  
+}
 
 footer {
   top: auto;
@@ -286,7 +286,7 @@ footer {
   align-items: baseline;
   right: 0px;
   left: 0px;
-  width: 90%;  
+  width: 90%;
 }
 
 footer ul {
@@ -294,11 +294,11 @@ footer ul {
 }
 
 footer a {
-  color:#0088CC;
+  color: #0088CC;
 }
 
 .left-footer {
-  position: relative;  
+  position: relative;
   margin-top: 7px;
 }
 
@@ -313,7 +313,7 @@ footer a {
 }
 
 .right-footer ul {
-  display: flex;    
+  display: flex;
   white-space: nowrap;
   align-items: center;
 }
@@ -344,15 +344,15 @@ footer ul li a {
 }
 
 .bottom-left-footer ul li {
- background: none;
- border-left: none;
- border-right: 1px solid black;
- height: 10px; 
- border-color: #0088CC; 
+  background: none;
+  border-left: none;
+  border-right: 1px solid black;
+  height: 10px;
+  border-color: #0088CC;
 }
 
 .bottom-left-footer ul li:first-child {
- border-right: none;
+  border-right: none;
 }
 
 .bottom-left-footer ul li:last-child {
