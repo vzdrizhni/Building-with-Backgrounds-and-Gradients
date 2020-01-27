@@ -72,14 +72,20 @@ select {
   }
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 65%;
+  height: 100%;
+  overflow: auto;
 }
 
 body {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0;
+  height: auto;
 }
 
 main {
@@ -100,15 +106,13 @@ main {
 }
 
 nav {
-  margin: 62px 0 0px;
   border: 1px solid gray;
   border-radius: 5px;
   position: absolute;
   width: 90%;
   z-index: 99;
   height: 40px; 
-  
-   
+  top: 8%;   
 }
 
 nav .nav-bar {
@@ -186,7 +190,6 @@ span {
   margin-top: 143px;
   margin-left: auto;
   margin-right: auto;  
-  width: 75%;
 }
 
 .what-will-container img {
@@ -271,7 +274,8 @@ span {
 }  
 
 footer {
-  top: 755px;
+  top: auto;
+  bottom: 24px;
   position: absolute;
   font-family: myFirstFont;
   font-size: 10px;
@@ -331,7 +335,6 @@ footer ul li a {
 .bottom-left-footer {
   white-space: nowrap;
   display: flex;
-  margin-left: -40px;
 }
 
 .bottom-left-footer ul {
