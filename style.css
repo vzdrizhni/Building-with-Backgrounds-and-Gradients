@@ -1,0 +1,352 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  height: auto;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  font-size: 65%;
+  height: 100%;
+  overflow: auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.top-part {
+  height: 64%;
+  width: 100%;
+  background-image: url(./images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  position: absolute;
+  background-size: 100% 250%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+nav {
+  border: 1px solid gray;
+  border-radius: 5px;
+  position: absolute;
+  width: 90%;
+  z-index: 99;
+  height: 40px;
+  top: 8%;
+}
+
+nav .nav-bar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 0 0 0 0;
+  color: white;
+  align-items: center;
+  padding-left: 0;
+  font-family: myFirstFont, sans-serif;
+  font-size: 1.3rem;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./Fonts/Lucida\ Sans\ Unicode.ttf);
+}
+
+.nav-bar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border-left: 1px solid rgb(68, 68, 68);
+  flex: 1;
+  text-align: center;
+  height: 40px;
+  background: linear-gradient(to bottom, rgb(119, 124, 120) 5%, rgb(105, 105, 105) 11%, rgb(100, 100, 100) 50%, rgb(82, 82, 82) 51%, rgb(100, 105, 101) 100%);
+}
+
+footer a {
+  color: #08c;
+}
+
+footer ul li a {
+  text-decoration: none;
+}
+
+.left-footer a {
+  text-decoration: none;
+}
+
+nav .nav-bar li a {
+  text-decoration: none;
+  color: white;
+}
+
+.inline-input {
+  position: relative;
+  margin: 0 14px;
+}
+
+.nav-bar li div input {
+  border: 1px solid gray;
+  border-radius: 15px;
+  border-style: inset;
+  width: 108px;
+  background-color: transparent;
+  height: 22px;
+  outline: none;
+  padding-left: 21px;
+  color: white;
+}
+
+span {
+  position: absolute;
+  top: 3.3px;
+  right: 90px;
+  font-size: 1.2rem;
+}
+
+.what-will-container {
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 143px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.what-will-container img {
+  display: flex;
+  flex-direction: column;
+}
+
+.will-1 {
+  object-fit: cover;
+  object-position: 0 5px;
+  cursor: pointer;
+}
+
+.will-2 {
+  background: url(./images/your_verse_subhead_small_2x.png) no-repeat 50% 50%;
+  height: 88px;
+  background-size: contain;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.will-3 {
+  height: 66px;
+  cursor: pointer;
+  margin: 0 auto;
+  object-position: 0 -32px;
+}
+
+.bottom-part {
+  position: absolute;
+  width: 100%;
+  top: auto;
+  bottom: 85px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.bottom-part ul {
+  display: flex;
+  justify-content: start;
+  padding-left: 0;
+  height: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.bottom-part ul li {
+  border-left: none;
+  height: 197px;
+  width: 25%;
+  list-style: none;
+}
+
+.right-footer ul li {
+  background: none;
+  border-left: none;
+  border-right: 1px solid black;
+  height: 10px;
+  border-color: #08c;
+  display: flex;
+  align-items: center;
+}
+
+.bottom-left-footer ul li {
+  background: none;
+  border-left: none;
+  border-right: 1px solid black;
+  height: 10px;
+  border-color: #08c;
+}
+
+.nav-bar li:first-child {
+  border-left: none;
+  font-size: 2rem;
+}
+
+.nav-bar li:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.bot-iphone-1 {
+  background: url(./images/iphone5S.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.bot-iphone-2 {
+  background: url(images/iphone5C2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.bot-iphone-3 {
+  background: url(./images/happybirthday.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.bot-iphone-4 {
+  background: url(./images/supplier.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.bottom-part ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+footer {
+  top: auto;
+  bottom: 24px;
+  position: absolute;
+  font-family: myFirstFont, sans-serif;
+  font-size: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 2fr);
+  margin: 0 auto;
+  align-items: baseline;
+  right: 0;
+  left: 0;
+  width: 90%;
+}
+
+.left-footer {
+  position: relative;
+  margin-top: 7px;
+}
+
+.right-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right-footer ul {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.bottom-left-footer {
+  white-space: nowrap;
+  display: flex;
+}
+
+.bottom-left-footer ul {
+  border-left: none;
+  display: flex;
+  white-space: nowrap;
+}
+
+.bottom-left-footer ul li:first-child {
+  border-right: none;
+}
+
+.bottom-left-footer ul li:last-child {
+  border-right: none;
+}
+
+.right-footer ul li:last-child {
+  border-right: none;
+}
