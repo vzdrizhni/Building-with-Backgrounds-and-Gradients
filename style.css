@@ -136,10 +136,14 @@ nav .nav-bar {
 }
 
 footer a {
-  color: #08C;
+  color: #08c;
 }
 
 footer ul li a {
+  text-decoration: none;
+}
+
+.left-footer a {
   text-decoration: none;
 }
 
@@ -234,16 +238,12 @@ footer ul {
   list-style: none;
 }
 
-.left-footer a {
-  text-decoration: none;
-}
-
 .right-footer ul li {
   background: none;
   border-left: none;
   border-right: 1px solid black;
   height: 10px;
-  border-color: #08C;
+  border-color: #08c;
   display: flex;
   align-items: center;
 }
@@ -253,7 +253,7 @@ footer ul {
   border-left: none;
   border-right: 1px solid black;
   height: 10px;
-  border-color: #08C;
+  border-color: #08c;
 }
 
 .nav-bar li:first-child {
