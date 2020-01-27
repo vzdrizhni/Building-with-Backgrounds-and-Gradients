@@ -219,7 +219,8 @@ span {
 .bottom-part {
   position: absolute;  
   width: 100%;
-  top: 498px;
+  top: auto;
+  bottom: 85px;
 }
 
 .bottom-part ul {
