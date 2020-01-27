@@ -1,3 +1,92 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  font-size: 65%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -16,16 +105,18 @@ main {
 }
 
 nav {
-  margin: 37px 1% 0px;
-  border: 1px solid;
+  margin: 62px 0 0px;
+  border: 1px solid gray;
   border-radius: 5px;
   position: absolute;
   width: 90%;
   z-index: 99;
-  height: 40px;  
+  height: 40px; 
+  
+   
 }
 
-nav ul {
+nav .nav-bar {
   display: flex; 
   flex-flow: row wrap;
   justify-content: space-evenly; 
@@ -34,6 +125,7 @@ nav ul {
   align-items: center;
   padding-left: 0px;
   font-family: myFirstFont;
+  font-size: 1.3rem;
 }
 
 @font-face {
@@ -41,7 +133,7 @@ nav ul {
   src: url(./Fonts/Lucida\ Sans\ Unicode.ttf);
 }
 
-ul li {
+.nav-bar li {
   display: flex; 
   justify-content: center;
   align-items: center;
@@ -53,33 +145,43 @@ ul li {
   background: linear-gradient( to bottom, rgb(119, 124, 120) 5%, rgb(105, 105, 105) 11%, rgb(100, 100, 100) 50%, rgb(82, 82, 82) 51%, rgb(100, 105, 101) 100% );
 }
 
-ul:first-child {
+.nav-bar li:first-child {
   border-left: none;
+  font-size: 2rem;
 }
 
-ul li:hover {
+.nav-bar li:hover {
   opacity: 0.9;
   cursor: pointer;
 }
 
-nav ul li a {
+nav .nav-bar li a {
   text-decoration: none;
   color: white;
 }
 
-input {
-  border-radius: 10px;
-  width: 83px;
-  margin-right: 10px;
+.inline-input {
+  position: relative;
+  margin: 0 14px;
+}
+
+.nav-bar li div input {
+  border: 1px solid gray;
+  border-radius: 15px;
+  border-style: inset;
+  width: 108px;
   background-color: transparent;
+  height: 22px;
+  outline: none;
+  padding-left: 21px;
+  color: white;
 }
 
 span {
-  margin-right: 10px;
-  margin-left: 10px;
   position: absolute;
-  left: 81.6em;
-  top: 12%;
+  top: 3.3px;
+  right: 90px;
+  font-size: 1.2rem;
 }
 
 .what-will-container { 
@@ -88,49 +190,41 @@ span {
   align-items: center;
   margin-top: 143px;
   margin-left: auto;
-  margin-right: auto;
-  height: 63%;
-  width: 50%;
+  margin-right: auto;  
+  width: 75%;
 }
 
 .what-will-container img {
-  width: 80%; 
   display: flex;
   flex-direction: column;  
 }   
 
 
-.will-1 {
-  background-color: azure;
-	background: url(./images/your_verse_title_small_2x.png) no-repeat 49.931% 54.321%;
-	width: 1231px;
-  height: 121px;
-  background-size: cover;
+.will-1 { 
+  object-fit: cover;
+  object-position: 0 5px; 
   cursor: pointer;
 }
 
 .will-2 {  
-	background: url(./images/your_verse_subhead_small_2x.png) no-repeat 49.878% 63.158%;
-	width: 1248px;
-  height: 160px;
+	background: url(./images/your_verse_subhead_small_2x.png) no-repeat 50% 50%;
+  height: 88px;
   background-size: contain;
-  margin-top: -45px;
+  margin-top: -10px;
   cursor: pointer;
 }
 
 .will-3 { 
-	background: url(./images/cta_your_verse_27pt_2x.png) no-repeat 49.773% 6.849%;
-	width: 1080px;
-  height: 35px;
-  background-size: cover;
+  height: 66px;
   cursor: pointer;
+  margin: 0 auto;
+  object-position: 0px -32px;
 }
 
 .bottom-part {
-  position: absolute;
-  height: 262px;
+  position: absolute;  
   width: 100%;
-  top: 492px;
+  top: 498px;
 }
 
 .bottom-part ul {
@@ -145,54 +239,58 @@ span {
 .bottom-part ul li {  
   height: 100%;
   border-left: none; 
-}
-
-.bottom-part ul li {
-  opacity: 1;
+  height: 197px;
+  width: 25%;
+  list-style: none;
 }
 
 .bot-iphone-1 { 
   background: url(./images/iphone5S.jpg); 
   background-repeat: no-repeat;
-  background-size: 100% 76%;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .bot-iphone-2 {
   background: url(images/iphone5C2.jpg); 
   background-repeat: no-repeat;
-  background-size: 100% 76%;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .bot-iphone-3  {
   background: url(./images/happybirthday.jpg);  
   background-repeat: no-repeat;
-  background-size: 100% 76%;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .bot-iphone-4 {
   background: url(./images/supplier.jpg); 
   background-repeat: no-repeat;
-  background-size: 100% 76%;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .bottom-part ul li a {
   width: 100%;
   height: 84%;
   margin-top: -40px;
-}
+}  
 
 footer {
-  width: 100%;
-  top: 97%;
+  top: 755px;
   position: absolute;
-  display: flex;
-  justify-content: space-between;
   font-family: myFirstFont;
   font-size: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 2fr);
+  margin: 0px auto;
+  align-items: baseline;
+  right: 0px;
+  left: 0px;
+  width: 90%;  
+}
+
+footer ul {
+  list-style: none;
 }
 
 footer a {
@@ -210,22 +308,24 @@ footer a {
 
 
 .right-footer {
-  position: relative;
-  display: flex;  
+  display: flex;
+  justify-content: flex-end;
 }
 
 .right-footer ul {
-  display: flex;
-  flex-basis: content;    
+  display: flex;    
   white-space: nowrap;
+  align-items: center;
 }
 
 .right-footer ul li {
- background: none;
- border-left: none;
- border-right: 1px solid black;
- height: 10px; 
- border-color: #0088CC;
+  background: none;
+  border-left: none;
+  border-right: 1px solid black;
+  height: 10px;
+  border-color: #0088CC;
+  display: flex;
+  align-items: center;
 }
 
 footer ul li a {
@@ -235,6 +335,7 @@ footer ul li a {
 .bottom-left-footer {
   white-space: nowrap;
   display: flex;
+  margin-left: -40px;
 }
 
 .bottom-left-footer ul {
@@ -253,6 +354,10 @@ footer ul li a {
 
 .bottom-left-footer ul li:first-child {
  border-right: none;
+}
+
+.bottom-left-footer ul li:last-child {
+  border-right: none;
 }
 
 .right-footer ul li:last-child {
